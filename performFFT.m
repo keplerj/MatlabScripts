@@ -31,7 +31,7 @@ function [Fss, Magnitude, Phase] = performFFT(y, dqrate, window)
     
     Fss = Fts(1 : round(NFFT / 2));
 
-    Magnitude = abs(Yss);        % Magnitude of the FFT
+    Magnitude = abs(Yss);
     
-    Phase = unwrap(angle(Yss));  % Phase of the FFT
+    Phase = unwrap(angle(Yss));
 end

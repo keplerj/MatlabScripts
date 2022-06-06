@@ -27,7 +27,7 @@ function [Fss, Magnitude, Phase] = performFFT(y, dqrate, window)
     %% Single-Sided
     Yss = Yts(1 : round(NFFT / 2), :);
     
-    Yss(2 : end - 1, :) = 2 * Yss(2:end-1, :);
+    Yss(2 : end - 1, :) = 2 * Yss(2 : end - 1, :);
     
     Fss = Fts(1 : round(NFFT / 2));
 
